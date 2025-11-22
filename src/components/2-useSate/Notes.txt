@@ -1,0 +1,9 @@
+What is useState()?
+
+useState() lets your component remember values between renders.
+It returns an array:
+const [value, setValue] = useState(initialValue);
+
+value → the current state
+setValue() → function to update it
+initialValue → the default
