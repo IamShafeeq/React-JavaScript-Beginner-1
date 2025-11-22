@@ -1,0 +1,17 @@
+Install React Using Vite (Step-by-Step)
+
+Make sure you have:
+    - Node.js 18+ installed
+
+Create a React project using Vite
+
+Run this command in your terminal:
+
+npm create vite@latest project1 --template react
+
+Move inside the project folder
+npm install
+
+Start the development server
+
+npm run dev
