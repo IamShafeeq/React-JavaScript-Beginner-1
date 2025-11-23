@@ -1,40 +1,20 @@
-/*
+import { useState } from "react";
+import "./fade.css";
 
-useState + localStorage Example: Saving User’s Notes
-
-This component lets the user type notes, and it automatically saves 
-them to localStorage so the data is not lost when the page reloads.
-
-*/
-
-import { useState, useEffect } from "react";
-
-function Notes() {
-  // Load saved notes from localStorage on first render
-  const [note, setNote] = useState(() => {
-    return localStorage.getItem("myNote") || "";
-  });
-
-  // Save note to localStorage whenever it changes
-  useEffect(() => {
-    localStorage.setItem("myNote", note);
-  }, [note]); // runs every time 'note' changes
+function FadeBox() {
+  const [visible, setVisible] = useState(true);
 
   return (
     <div>
-      <h2>My Notes (Saved Automatically)</h2>
+      <button onClick={() => setVisible(!visible)}>
+        {visible ? "Fade Out" : "Fade In"}
+      </button>
 
-      <textarea
-        rows="6"
-        cols="40"
-        value={note}
-        onChange={(e) => setNote(e.target.value)}
-        placeholder="Write your notes..."
-      />
-
-      <p><strong>Saved!</strong> Refresh the page and your notes remain.</p>
+      <div className={visible ? "fade-in box" : "fade-out box"}>
+        I am fading!
+      </div>
     </div>
   );
 }
 
-export default Notes;
+export default FadeBox;

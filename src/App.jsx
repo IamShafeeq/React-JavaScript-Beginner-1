@@ -1,7 +1,8 @@
 //import App1 from "./Project1/App.jsx"
 
 //import App1 from "./components/1-props/App.jsx"
-import App1 from "./components/2-useSate/App.jsx"
+//import App1 from "./components/2-useSate/App.jsx"
+import App1 from "./components/5-UseEffect/App"
 
 
 function App() {

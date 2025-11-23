@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-        <h1> Props</h1>
+        <h2> Props</h2>
        <App1/> 
     </>
   )

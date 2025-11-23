@@ -1,0 +1,18 @@
+.box {
+  width: 200px;
+  height: 80px;
+  background: lightblue;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.8s ease;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
